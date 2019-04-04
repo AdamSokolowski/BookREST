@@ -7,6 +7,18 @@ public class Book {
 	private String author;
 	private String publisher;
 	private String type;
+	
+	
+	
+	public Book(long id, String isbn, String title, String author, String publisher, String type) {
+		super();
+		this.id = id;
+		this.isbn = isbn;
+		this.title = title;
+		this.author = author;
+		this.publisher = publisher;
+		this.type = type;
+	}
 	public long getId() {
 		return id;
 	}
