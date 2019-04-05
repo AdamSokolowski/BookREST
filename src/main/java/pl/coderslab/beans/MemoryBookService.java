@@ -48,6 +48,8 @@ public class MemoryBookService implements BookService{
     }
     
     public void addBook(Book book) {
+    	lastId++;
+    	book.setId(lastId);
     	list.add(book);
     }
     
@@ -63,6 +65,7 @@ public class MemoryBookService implements BookService{
     		list.remove(listIndex);
     	
     }
+    
     
 }
 

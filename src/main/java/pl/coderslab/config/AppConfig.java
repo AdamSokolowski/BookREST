@@ -21,9 +21,11 @@ public class AppConfig implements WebMvcConfigurer{
         viewResolver.setSuffix(".jsp");
         return viewResolver;
 	}
+	
+	
 	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/BookRESTApi/**")
-			.allowedMethods("GET", "POST", "PUT", "DELETE")
-			.allowedOrigins("http://localhost");
+		registry.addMapping("/**")
+			.allowedMethods("GET", "POST", "PUT", "DELETE");
+			//.allowedOrigins("http://localhost");   blocked for local harddrive html file 
 	}
 }
