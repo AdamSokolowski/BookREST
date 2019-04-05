@@ -1,4 +1,5 @@
 # BookREST
+Used Tech: JavaScript, AJAX, JSON, REST, Jersey
 
 Rest-Api back-End application, that allow CRUD operations for books list.
 Involves Controller and Model for books data.
@@ -8,3 +9,5 @@ Rest API request methods are demonstrated in application: GET, POST, PUT, DELETE
 
 Front-End for this application:
 https://github.com/AdamSokolowski/JSON-Rest-API-Frontend
+
+
