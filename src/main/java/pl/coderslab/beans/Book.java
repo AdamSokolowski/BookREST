@@ -1,16 +1,18 @@
 package pl.coderslab.beans;
 
 public class Book {
-	private long id;
+	private int id;
 	private String isbn;
 	private String title;
 	private String author;
 	private String publisher;
 	private String type;
 	
+	public Book() {
+		
+	}
 	
-	
-	public Book(long id, String isbn, String title, String author, String publisher, String type) {
+	public Book(int id, String isbn, String title, String author, String publisher, String type) {
 		super();
 		this.id = id;
 		this.isbn = isbn;
@@ -19,10 +21,10 @@ public class Book {
 		this.publisher = publisher;
 		this.type = type;
 	}
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getIsbn() {
